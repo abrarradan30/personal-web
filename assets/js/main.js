@@ -89,13 +89,20 @@
     });
     
     
-    //===== Magnific Popup
-    
-    $('.image-popup').magnificPopup({
-      type: 'image',
-      gallery:{
-        enabled:true
-      }
+    //===== GLightbox
+
+    const lightbox = GLightbox({
+        selector: '.glightbox',
+        touchNavigation: true,
+        loop: true,
+        zoomable: true,
+        draggable: true,
+        openEffect: 'zoom',
+        closeEffect: 'fade',
+        slideEffect: 'slide',
+        moreText: 'See more',
+        moreLength: 0,
+        closeButton: true,
     });
     
     
